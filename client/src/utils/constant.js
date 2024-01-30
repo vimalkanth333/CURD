@@ -1,1 +1,1 @@
-export const baseURL="http://localhost:3001";
+export const baseURL="https://good-pink-chicken-tam.cyclic.app/";
