@@ -27,17 +27,17 @@ function CreateUser () {
                     <div className="mb-2">
                         <label htmlFor="">Name</label>
                         <input type="text" placeholder="Enter Name" className="form-control"
-                        onChange={(e) => setName(e.target.value)}/>
+                        onChange={(e) => setName(e.target.value)} required/>
                     </div>
                     <div className="mb-2">
                         <label htmlFor="">Email</label>
                         <input type="text" placeholder="Enter Name" className="form-control"
-                        onChange={(e) => setEmail(e.target.value)}/>
+                        onChange={(e) => setEmail(e.target.value)} required/>
                     </div>
                     <div className="mb-2">
                         <label htmlFor="">Age</label>
                         <input type="text" placeholder="Enter Name" className="form-control"
-                        onChange={(e) => setAge(e.target.value)}/>
+                        onChange={(e) => setAge(e.target.value)} required/>
                     </div>
                     <button className="btn btn-success">submit</button>
                 </form>
