@@ -14,10 +14,9 @@ function Users () {
     },[])
 
     const handleDelete =(id) =>{
-         id.preventDefault();
         axios.delete(`${baseURL}/deleteUser/`+id)
         .then(res => {console.log(res)
-           })
+           window.location.reload()})
         .catch(err => console.log(err))
     }
     return (
