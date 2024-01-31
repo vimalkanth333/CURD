@@ -16,9 +16,9 @@ function Users () {
     const handleDelete =(id) =>{
         axios.delete(`${baseURL}/deleteUser/`+id)
         .then(res => {console.log(res)
-            })
+           [] })
         .catch(err => console.log(err))
-    },[];
+    }
     return (
         <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
             <div className='w-50 bg-white rounded p-3'>
