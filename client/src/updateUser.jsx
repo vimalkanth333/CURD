@@ -40,17 +40,17 @@ function UpdateUser () {
                 <div className="mb-2">
                     <label htmlFor="">Name</label>
                     <input type="text" placeholder="Enter Name" className="form-control"
-                    value={name}  onChange={(e) => setName(e.target.value)}/>
+                    value={name}  onChange={(e) => setName(e.target.value)} required/>
                 </div>
                 <div className="mb-2">
                     <label htmlFor="">Email</label>
                     <input type="text" placeholder="Enter Name" className="form-control"
-                     value={email}  onChange={(e) => setEmail(e.target.value)}/>
+                     value={email}  onChange={(e) => setEmail(e.target.value)} required/>
                 </div>
                 <div className="mb-2">
                     <label htmlFor="">Age</label>
                     <input type="text" placeholder="Enter Name" className="form-control"
-                     value={age}  onChange={(e) => setAge(e.target.value)}/>
+                     value={age}  onChange={(e) => setAge(e.target.value)} required/>
                 </div>
                 <button className="btn btn-success">update</button>
             </form>
