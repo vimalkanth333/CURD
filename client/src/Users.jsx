@@ -16,7 +16,7 @@ function Users () {
     const handleDelete =(id) =>{
         axios.delete(`${baseURL}/deleteUser/`+id)
         .then(res => {console.log(res)
-           [] })
+           })
         .catch(err => console.log(err))
     }
     return (
