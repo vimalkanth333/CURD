@@ -6,17 +6,19 @@ import { baseURL } from './utils/constant';
 
 function Users () {
     const [users, setUsers] = useState ([])
+     const [handleui, sethandleui] = useState(false);
 
     useEffect(()=> {
         axios.get(`${baseURL}`)
         .then(result => setUsers(result.data))
         .catch (err=> Console.log(err))
-    },[])
+    },[handleui])
 
     const handleDelete =(id) =>{
         axios.delete(`${baseURL}/deleteUser/`+id)
         .then(res => {console.log(res)
-           window.location.reload()})
+           sethandleui((prevstate) => !prevstate)
+                     })
         .catch(err => console.log(err))
     }
     return (
